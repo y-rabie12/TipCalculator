@@ -1,0 +1,112 @@
+/*### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan:hsl(183, 100%, 15%);
+    --darkGrayishCyan1:hsl(186, 14%, 43%);
+    --darkGrayishCyan2:  hsl(184, 14%, 56%);
+    --ligthGrayishCyan1:  hsl(185, 41%, 84%);
+    --ligthGrayishCyan2: hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--ligthGrayishCyan1);
+    color:black;
+}
+
+
+
+
+h1{
+    
+    color:var(--veryDarkCyan);
+    text-align:center;
+}
+
+
+input{
+    width:100%;
+    border:2px solid black;
+    border-radius:10px;
+    font-size:24px;
+    padding:0.3em;
+    background-color: var(--ligthGrayishCyan2);
+    font-weight: 700;
+    
+}
+.container{
+    margin-top:1em;
+    padding:1em;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--white);
+}
+
+.info label {
+    font-size:1rem;
+    display:block;
+}
+
+.tip {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    margin-bottom: 1em;
+}
+
+.btn,.custom {
+  font-size:1rem;
+  padding:0.5em;
+  border:none;
+  border-radius:10px;
+  background-color: var(--veryDarkCyan);   
+  color:white;
+  font-weight: 700;
+}
+
+.custom {
+    text-align: center;
+    background-color: var(--ligthGrayishCyan2);
+    color:var(--veryDarkCyan);
+    font-weight: 700;
+}
+
+
+.result{
+    margin-top:1em;
+    padding:1em;
+    border-radius: 10px;
+    background-color: var(--veryDarkCyan);
+}
+
+.reset {
+    width:100%;
+    margin-top: 1em;
+    padding:0.5em;
+    border-radius:10px;
+    border:none;
+    font-size:1rem;
+    font-weight:700;
+    background-color: var(--strongCyan);
+    color:var(--veryDarkCyan);
+}
